@@ -76,8 +76,8 @@ export const Footer = () => (
 							<i class="fas fa-envelope me-3"></i>
 							info@example.com
 						</p>
-						<p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-						<p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+						<p><i className="fas fa-phone me-3"></i> + 01 234 567 88</p>
+						<p><i className="fas fa-print me-3"></i> + 01 234 567 89</p>
 					</div>
 				</div>
 			</div>

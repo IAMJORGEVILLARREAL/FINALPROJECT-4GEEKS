@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ScrollToTop from "./component/scrollToTop";
+import ScrollToTop from "./components/scrollToTop";
 
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
@@ -9,8 +9,8 @@ import { Single } from "./views/single";
 import  Contact  from "./views/contact"
 import injectContext from "./store/appContext";
 
-import { Navbar } from "./component/navbar";
-import { Footer } from "./component/footer";
+import { Navbar } from "./components/navbar";
+import { Footer } from "./components/footer";
 
 const Layout = () => {
   const basename = process.env.BASENAME || "";
@@ -23,9 +23,9 @@ const Layout = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Demo />} />
-			      <Route path="/about" element={<About/>}/>
+            <Route path="/about" element={<About/>}/>
             <Route path="/single/:theid" element={<Single />} />
-			      <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<h1>Not found!</h1>} />
           </Routes>
           <Footer />
