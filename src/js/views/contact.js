@@ -3,7 +3,7 @@ import "../../styles/contact.css";
 
 const Contact = () => {
   return (
-    <div className="container">
+    <div className="container" style={{ color: "white" }}>
       <section className="mb-4">
         <h2 className="h1-responsive font-weight-bold text-center my-4">
           Contact us

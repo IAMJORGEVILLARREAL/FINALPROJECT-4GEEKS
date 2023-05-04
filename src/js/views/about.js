@@ -3,15 +3,15 @@ import "../../styles/about.css";
 
 const About = () => {
   return (
-    <div>
-      <div className="about-section">
+    <div className="container">
+      <div className="about-section mt-5">
         <h1>About Us Page</h1>
         <p>Some text about who we are and what we do.</p>
         <p>Resize the browser window to see that this page is responsive by the way.</p>
       </div>
 
-      <h2 style={{textAlign:"center"}}>Our Team</h2>
-      <div className="row">
+      <h2 className="m-5" style={{textAlign:"center", color:"white"}}>Our Team</h2>
+      <div className="row mb-5">
         <div className="column">
           <div className="card">
             <img src="https://images.squarespace-cdn.com/content/v1/5c4d7e227e3c3a6ec70a5ac7/1549195948171-60SBD1G8V8PF85A44SY4/Sir+Patrick+Stewart+Portrait+Sitting+2014-14-05-+%282+of+4%29.jpg?format=1000w" alt="Jane" style={{width:"100%"}} />
