@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Footer = () => (
-	<footer className="footer text-center text-lg-start bg-light text-muted" style={{ marginTop: "auto" }}>
+	<footer className="footer text-center text-lg-start bg-light text-muted " style={{ marginTop: "auto" }}>
 		<div className="container-fluid p-0">
 			<section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
 				<div className="me-5 d-none d-lg-block">
