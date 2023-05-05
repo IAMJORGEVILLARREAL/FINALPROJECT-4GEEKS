@@ -1,16 +1,62 @@
 .btn-custom {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-  }
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
 
-  .wrapper .card {
-    width: 300px;
-    height: 420px;
-  }
-  .card-body img {
-    height: 200px;
-    object-fit: cover;
-  }
-  .jumbotron{
-    background-color: azure;
-  }
+.wrapper .card {
+  width: 300px;
+  height: 500px;
+}
+.card-body img {
+  height: 200px;
+  object-fit: cover;
+}
+.jumbotron{
+  background-color: whitesmoke;
+  max-width: 1500px; /* Set the maximum width to 1200px */
+  max-height: 350px;
+  margin: 0 auto; /* Center the jumbotron horizontally */
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-text {
+  margin: 8px 0;
+  font-size: 13px;
+}
+
+.wrapper {
+  background-image: url('https://t3.ftcdn.net/jpg/04/42/06/34/360_F_442063430_OjLo5sHK0twuUk2hCGWpjLphEHiLcamL.jpg');
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+.lead {
+  font-size: 31px; /* change this value to adjust the font size */
+}
+p {
+  font-size: 20px;
+}
+.btn-custom {
+  padding: 0.40rem 1.5rem; /* increase padding to make button bigger */
+  font-size: 1.25rem; /* increase font size */
+  background-color: #0D47A1; /* set background color to dark blue */
+  border-color: #0D47A1; /* set border color to dark blue */
+}
+.btn-outline-light {
+  margin: 0 auto;
+  display: block;
+}
+.card-title {
+  text-align: center;
+}
+.card-body {
+  text-align: center;
+}
+.btn-outline-light {
+  position: absolute;
+  bottom: 10px; /* Adjust the value to move the button up or down */
+  left: 50%;
+  transform: translateX(-50%);
+}
