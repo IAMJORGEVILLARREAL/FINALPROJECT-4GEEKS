@@ -18,13 +18,13 @@ export const Footer = () => (
 					<a href="" className="me-4 text-reset">
 						<i className="fab fa-google"></i>
 					</a>
-					<a href="" className="me-4 text-reset">
+					<a href="https://www.instagram.com/realm32media/" target="_blank" className="me-4 text-reset">
 						<i className="fab fa-instagram"></i>
 					</a>
-					<a href="" className="me-4 text-reset">
+					<a href="https://www.linkedin.com/in/arivillarreals/" target="_blank" className="me-4 text-reset">
 						<i className="fab fa-linkedin"></i>
 					</a>
-					<a href="" className="me-4 text-reset">
+					<a href="https://github.com/IAMJORGEVILLARREAL" target="_blank" className="me-4 text-reset">
 						<i className="fab fa-github"></i>
 					</a>
 				</div>
@@ -43,16 +43,16 @@ export const Footer = () => (
 						<div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 							<h6 className="text-uppercase fw-bold mb-4">Products</h6>
 							<p>
-								<a href="#!" className="text-reset">Branding & Web</a>
+								<a href="/services" className="text-reset">Branding & Web</a>
 							</p>
 							<p>
-								<a href="#!" className="text-reset">Content Creation</a>
+								<a href="/services" className="text-reset">Content Creation</a>
 							</p>
 							<p>
-								<a href="#!" className="text-reset">Social Media Management</a>
+								<a href="/services" className="text-reset">Social Media Management</a>
 							</p>
 							<p>
-								<a href="#!" className="text-reset">Mentorship</a>
+								<a href="/services" className="text-reset">Mentorship</a>
 							</p>
 						</div>
 						<div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
