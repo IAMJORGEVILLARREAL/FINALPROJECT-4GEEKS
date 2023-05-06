@@ -2,3 +2,8 @@
     position: absolute;
     width: 100%;
 }
+@media (min-width: 992px){
+    .container-fluid{
+        height: 550px;
+    }
+}

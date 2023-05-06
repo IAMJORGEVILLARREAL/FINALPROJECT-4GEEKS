@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/footer.css"
 
 export const Footer = () => (
 	<footer className="footer text-center text-lg-start bg-light text-muted " style={{ marginTop: "auto" }}>
@@ -73,7 +74,7 @@ export const Footer = () => (
 							<h6 className="text-uppercase fw-bold mb-4">Contact</h6>
 							<p><i className="fas fa-home me-3"></i>Homestead, FL, US</p>
 							<p>
-								<i class="fas fa-envelope me-3"></i>
+								<i className="fas fa-envelope me-3"></i>
 								 info@realm32.com
 							</p>
 							<p><i className="fas fa-phone me-3"></i>+ 01 234 567 88</p>

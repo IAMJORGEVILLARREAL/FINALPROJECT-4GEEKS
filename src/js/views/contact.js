@@ -15,7 +15,7 @@ const Contact = () => {
 
         <div className="row">
           <div className="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+            <form id="contact-form" name="contact-form" action="/send-email" method="POST">
               <div className="row">
                 <div className="col-md-6">
                   <div className="md-form mb-0">
@@ -23,6 +23,7 @@ const Contact = () => {
                     <input
                       type="text"
                       id="name"
+                      name="name"
                       placeholder="Your Name"
                       className="form-control"
                     />
@@ -36,6 +37,7 @@ const Contact = () => {
                     <input
                       type="text"
                       id="email"
+                      name="email"
                       placeholder="Your Email"
                       className="form-control"
                     />
@@ -51,6 +53,7 @@ const Contact = () => {
                     <input
                       type="text"
                       id="subject"
+                      name="subject"
                       placeholder="Subject"
                       className="form-control"
                     />
@@ -64,8 +67,8 @@ const Contact = () => {
                 <div className="col-md-12">
                   <div className="md-form">
                     <textarea
-                      type="text"
                       id="message"
+                      name="message"
                       placeholder="Message"
                       rows="2"
                       className="form-control md-textarea"
@@ -77,10 +80,28 @@ const Contact = () => {
               <div className="text-center text-md-left">
                 <button
                   className="btn btn-primary"
-                  type="submit"
-                  onClick={() => {
-                    document.getElementById("contact-form").submit();
+                  type="/send-email"
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    const form = document.getElementById('contact-form');
+                    const formData = new FormData(form);
+                    fetch('/send-email', {
+                      method: 'POST',
+                      body: formData
+                    })
+                      .then((response) => {
+                        if (response.ok) {
+                          alert('Your message has been sent successfully!');
+                          form.reset();
+                        } else {
+                          alert('Oops! Something went wrong.');
+                        }
+                      })
+                      .catch((error) => {
+                        console.error(error);
+                      });
                   }}
+                  
                 >
                   Send
                 </button>
